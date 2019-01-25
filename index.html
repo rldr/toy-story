@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Seymour+One" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Story 4</title>
+  </head>
+  <body>
+    <nav class="desktop">
+  <a href="#">Home</a>
+  <a href="#">Trailer</a>
+  <a href="#">Buy Tickets</a>
+  <a href="#">Press</a>
+</nav>
+
+<nav class="mobile">
+  <button>Toggle</button>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Trailer</a>
+    <a href="#">Buy Tickets</a>
+    <a href="#">Press</a>
+  </div>
+</nav>
+
+    <main>
+      <div class="col1">
+        <div class="wrapper">
+          <img class="img1" src="toystory1.png" height="200vw">
+          <img class="img2" src="toyfour.png" height="150vw">
+        </div>
+      </div>
+      <div class="col2">
+        <h2>JUNE 2019</h2>
+        <div class="button">
+          <a href="">TRAILER</a>
+          <img src="right-arrow.png">
+        </div>
+      </div>
+    </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+  $('button').click(function() {
+  $(this).toggleClass('expanded').siblings('div').slideToggle();
+  });
+  </script>
+  </body>
+</html>
